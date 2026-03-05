@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Development Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #F0F8FF;
+            color: #333;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .quiz-container {
+            max-width: 650px;
+            width: 100%;
+            margin: 15px 0;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 8px;
+        }
+
+        .question-block {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .question-block h3 {
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1em;
+        }
+
+        .option-label {
+            display: block;
+            margin: 6px 0;
+            padding: 8px 12px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .option-label:hover {
+            background-color: #eee; 
+            transform: scale(1.01); 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #16a085; 
+            transform: scale(1.005);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Basic Web Development Quiz</h1>
+
+        <form action="#" method="post">
+                       
+            <div class="question-block">
+                <h3>1. Which tag is used to make a line of text bold?</h3>
+                
+                <label class="option-label">
+                    <input type="radio" name="q1" value="a">
+                    &lt;head&gt;
+                </label>
+                
+                <label class="option-label">
+                    <input type="radio" name="q1" value="b">
+                    &lt;b&gt;
+                </label>
+                
+                <label class="option-label">
+                    <input type="radio" name="q1" value="c">
+                    &lt;list&gt;
+                </label>
+            </div>
+
+            <div class="question-block">
+                <h3>2. Which of these are code languages used for the front-end of a website? (Select all that apply)</h3>
+                
+                <label class="option-label">
+                    <input type="checkbox" name="q2_type" value="a">
+                    HTML
+                </label>
+                
+                <label class="option-label">
+                    <input type="checkbox" name="q2_type" value="b">
+                    CSS
+                </label>
+                
+                <label class="option-label">
+                    <input type="checkbox" name="q2_type" value="c">
+                    Python
+                </label>
+
+                <label class="option-label">
+                    <input type="checkbox" name="q2_type" value="d">
+                    JavaScript
+                </label>
+            </div>
+
+            <div class="question-block">
+                <h3>3. Where should you put the &lt;style&gt; tags in an HTML file?</h3>
+                
+                <label class="option-label">
+                    <input type="radio" name="q3" value="a">
+                    In the footer
+                </label>
+                
+                <label class="option-label">
+                    <input type="radio" name="q3" value="b">
+                    In the body
+                </label>
+                
+                <label class="option-label">
+                    <input type="radio" name="q3" value="c">
+                    In the head
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Quiz</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

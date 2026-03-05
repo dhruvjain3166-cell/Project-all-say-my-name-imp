@@ -1,0 +1,100 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-container:hover {
+    transform: scale(1.005);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.contact-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    transition: transform 0.3s ease;
+}
+.contact-table td {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.contact-table:hover {
+    transform: scale(1.02);
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
+}
+ul li {
+    margin-bottom: 8px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.data-table th {
+    background-color: #e9ecef;
+    color: #333;
+    font-weight: bold;
+}
+
+.data-table:hover {
+    transform: scale(1.02);
+}
